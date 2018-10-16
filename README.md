@@ -31,3 +31,9 @@ Use Cloud 9
 npm install
 create S3 bucket and then change - "templateBucket":"aws-sagemaker-build-prod"
 
+
+## Improve 
+
+1) Need for npm to create a cloudformation tempalte
+2) Can we have a cloudformation template directly?
+
