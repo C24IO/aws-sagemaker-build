@@ -20,3 +20,9 @@ npm run down #shuts down stack
 
 template is written to /cloudformation-template/build/template.json
 
+## Rough
+
+Use Cloud 9 
+npm install
+create S3 bucket and then change - "templateBucket":"aws-sagemaker-build-prod"
+
