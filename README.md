@@ -36,16 +36,25 @@ npm install -g npm@latest
 npm install npm@latest
 npm run up
 
+Then - 
+
+npm up 
+npm run up
+
 create S3 bucket and then change - "templateBucket":"aws-sagemaker-build-prod"
+
+## How to trigger once failed 
+
+Publish to SageBuild-prod-5-LaunchTopic-L58BN413WO9X - any message
 
 
 ## Todo
 
-1) Remove need for npm to create a cloudformation tempalte
-2) Can we have a cloudformation template directly?
+1) Remove need for npm to create a CloudFormation Template
+2) Can we have a CloudFormation Template directly?
 3) Move from npm to Go/Python?
 4) Drive this using a frontend like Hortonworks Cloudbreak?
-5) Possiblity to move to Jenkins or integrate other CI/CD?
+5) Possibility to move to Jenkins or integrate other CI/CD?
 6) Model versioning?
 7) Data versioning?
 8) Keep up with velocity of changes of SM Platform?
@@ -59,3 +68,5 @@ create S3 bucket and then change - "templateBucket":"aws-sagemaker-build-prod"
 1) First deployment fails at - FailBuildTraining
 2) Stack Delete Failed - EndpointConfigClear	2018/10/17/[$LATEST]f21329d3f7c8417d9c4f918a33ebe97f
 3) Stack Delete Failed - ModelClear	2018/10/17/[$LATEST]3b2d4719ed5f4e9faf94f88ba79bab62
+4) I think it clashes with the old artifacts remaining in the account
+5) SageMaker notebook is now empty

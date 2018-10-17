@@ -11,7 +11,7 @@ module.exports={
     },
     "NoteBookInstanceType":{
         "Type":"String",
-        "Default":"ml.t2.medium",
+        "Default":"ml.m4.xlarge",
         "AllowedValues":["ml.t2.medium","ml.m4.xlarge","ml.p2.xlarge","USE_EXTERNAL"],
         "Description":"The SageMaker Notebook Instance type that will be created and pre-populated with a sagebuild tutorial notebook"
     },
