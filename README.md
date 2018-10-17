@@ -33,6 +33,7 @@ nvm install 8
 npm install aws-sdk lodash uglify-es github
 npm install -g express-generator
 npm install -g npm@latest
+npm install npm@latest
 npm run up
 
 create S3 bucket and then change - "templateBucket":"aws-sagemaker-build-prod"
@@ -49,3 +50,12 @@ create S3 bucket and then change - "templateBucket":"aws-sagemaker-build-prod"
 7) Data versioning?
 8) Keep up with velocity of changes of SM Platform?
 9) Dockerize npm?
+10) Why remember state of last CloudFormation Template produced? 
+11) Second run fails without good errors
+12) This is a meta service - need 1 step?
+
+## Race
+
+1) First deployment fails at - FailBuildTraining
+2) Stack Delete Failed - EndpointConfigClear	2018/10/17/[$LATEST]f21329d3f7c8417d9c4f918a33ebe97f
+3) Stack Delete Failed - ModelClear	2018/10/17/[$LATEST]3b2d4719ed5f4e9faf94f88ba79bab62
