@@ -28,14 +28,13 @@ template is written to /cloudformation-template/build/template.json
 ## Rough
 
 Use Cloud 9
-npm install
-npm install uglify-es
-npm update lodash
-npm install aws-sdk
-npm install uglify-es
+node -e "console.log('Running Node.js ' + process.version)"
+nvm install 8
+npm install aws-sdk lodash uglify-es github
 npm install -g express-generator
-npm install github
 npm install -g npm@latest
+npm run up
+
 create S3 bucket and then change - "templateBucket":"aws-sagemaker-build-prod"
 
 
@@ -47,4 +46,6 @@ create S3 bucket and then change - "templateBucket":"aws-sagemaker-build-prod"
 4) Drive this using a frontend like Hortonworks Cloudbreak?
 5) Possiblity to move to Jenkins or integrate other CI/CD?
 6) Model versioning?
-7) DAta versioning?
+7) Data versioning?
+8) Keep up with velocity of changes of SM Platform?
+9) Dockerize npm?
