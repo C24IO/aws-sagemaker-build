@@ -27,13 +27,24 @@ template is written to /cloudformation-template/build/template.json
 
 ## Rough
 
-Use Cloud 9 
+Use Cloud 9
 npm install
+npm install uglify-es
+npm update lodash
+npm install aws-sdk
+npm install uglify-es
+npm install -g express-generator
+npm install github
+npm install -g npm@latest
 create S3 bucket and then change - "templateBucket":"aws-sagemaker-build-prod"
 
 
-## Improve 
+## Todo
 
-1) Need for npm to create a cloudformation tempalte
+1) Remove need for npm to create a cloudformation tempalte
 2) Can we have a cloudformation template directly?
-
+3) Move from npm to Go/Python?
+4) Drive this using a frontend like Hortonworks Cloudbreak?
+5) Possiblity to move to Jenkins or integrate other CI/CD?
+6) Model versioning?
+7) DAta versioning?
